@@ -1,0 +1,32 @@
+{
+    "name": "xiaohao/framework-tool",
+    "autoload": {
+        "psr-4": {
+            "Xiaohao\\RpcTool\\": "src"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.7.6",
+        "phpunit/phpunit": "7.5.1"
+    },
+    "require": {
+        "php": "^7.4",
+        "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xiaohao\\RpcTool\\Providers\\RpcToolServiceProvider"
+            ]
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
